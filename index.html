@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Kartik
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Dev Agrawal | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid #334155;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Sections */
+        section {
+            min-height: 100vh;
+            padding: 110px 10% 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* About */
+        #about {
+            background: linear-gradient(135deg, #0f172a, #172554);
+        }
+
+        .about-content {
+            max-width: 800px;
+        }
+
+        .about-content h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        .about-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 19px;
+            color: #cbd5e1;
+        }
+
+        /* Common heading */
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 45px;
+            color: #38bdf8;
+        }
+
+        /* Skills */
+        #skills {
+            background: #111827;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
+        }
+
+        .skill h3 {
+            color: #f8fafc;
+        }
+
+        /* Hobbies */
+        #hobbies {
+            background: linear-gradient(135deg, #172554, #0f172a);
+        }
+
+        .hobbies-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .hobby {
+            width: 250px;
+            padding: 35px 20px;
+            text-align: center;
+            background: #1e293b;
+            border-radius: 15px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .hobby:hover {
+            transform: scale(1.05);
+            border-color: #38bdf8;
+        }
+
+        .hobby .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hobby h3 {
+            color: #38bdf8;
+        }
+
+        /* Contact */
+        #contact {
+            background: #111827;
+            text-align: center;
+        }
+
+        .contact-box {
+            max-width: 650px;
+            margin: auto;
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #334155;
+        }
+
+        .contact-box p {
+            font-size: 20px;
+            margin: 15px 0;
+            color: #cbd5e1;
+        }
+
+        .email {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .about-content h1 {
+                font-size: 40px;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                font-size: 14px;
+                gap: 10px;
+            }
+
+            section {
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Kartik</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Section 1: About Me -->
+    <section id="about">
+        <div class="about-content">
+            <h1>Kartik Dev Agrawal</h1>
+
+            <h2>1st Year ECE Student</h2>
+
+            <p>
+                I am a first-year Electronics and Communication Engineering
+                student at the Indian Institute of Information Technology,
+                Guwahati.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Section 2: Skills -->
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>Problem Solving</h3>
+            </div>
+
+            <div class="skill">
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill">
+                <h3>C Programming</h3>
+            </div>
+
+            <div class="skill">
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill">
+                <h3>Circuits</h3>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Section 3: Hobbies -->
+    <section id="hobbies">
+        <h2 class="section-title">My Hobbies</h2>
+
+        <div class="hobbies-container">
+
+            <div class="hobby">
+                <div class="icon">🎬</div>
+                <h3>Watching Movies</h3>
+            </div>
+
+            <div class="hobby">
+                <div class="icon">🏸</div>
+                <h3>Playing Badminton</h3>
+            </div>
+
+            <div class="hobby">
+                <div class="icon">👀</div>
+                <h3>Observing Things</h3>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Section 4: Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-box">
+            <p>
+                Feel free to get in touch with me.
+            </p>
+
+            <p>
+                📧
+                <a class="email"
+                   href="mailto:agrawalkartikdev@gmail.com">
+                    agrawalkartikdev@gmail.com
+                </a>
+            </p>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2026 Kartik Dev Agrawal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
